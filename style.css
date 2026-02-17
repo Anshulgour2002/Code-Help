@@ -1,0 +1,26 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* background-color: black; */
+}
+.navbar{
+    background-color:red;
+}
+
+
+
+.right-img img{
+    width: 15%;
+}
+
+
+.middle-content{
+  
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.nav1{
+    display: flex;
+}
