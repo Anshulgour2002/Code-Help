@@ -192,3 +192,91 @@ body {
   color: white;
   cursor: pointer;
 }
+
+
+
+.left {
+    width: 45%;
+}
+
+.left h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.left p {
+    color: #aaa;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.buttons {
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 12px 22px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    margin-right: 15px;
+    font-size: 15px;
+}
+
+.primary {
+    background: #6c7ae0;
+    color: white;
+}
+
+.secondary {
+    background: transparent;
+    border: 1px solid #ff4d6d;
+    color: white;
+}
+
+/* STUDENTS */
+.students {
+    display: flex;
+    align-items: center;
+    background: #111827;
+    padding: 10px 20px;
+    border-radius: 40px;
+    width: fit-content;
+}
+
+.images {
+    display: flex;
+    margin-right: 10px;
+}
+
+.images img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 2px solid #0b0f19;
+    margin-left: -10px;
+    background: gray; /* placeholder */
+}
+
+/* RIGHT SIDE */
+.right {
+    width: 45%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.box {
+    border: 1px solid #444;
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+    background: #111827;
+    transition: 0.3s;
+}
+
+.box:hover {
+    border-color: #ff4d6d;
+    transform: translateY(-5px);
+}
