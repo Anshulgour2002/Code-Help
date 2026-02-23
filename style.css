@@ -1,286 +1,327 @@
-/* *{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    background-color: black;
-}
-
-
-        
-
-
-.right-img img{
-    width: 15%;
-}
-
-
-.middle-content{
-  
-    color: white;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-}
-.nav1{
-    display: flex;
-    
-} */
-
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
   font-family: Arial, sans-serif;
 }
 
-body {
-  background: #0b0f1a;
-  color: white;
+body{
+  background:#0e0f12;
+  color:white;
 }
 
-/* Navbar */
-.navbar {
-  display: flex;
-  justify-content: space-between;
+
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:10px 80px;
+ background-color: rgb(21, 20, 21);
+}
+
+
+
+.logo img{
+    height: 60px;
+}
+
+.blue{
+  color:#4c7dff;
+}
+
+.nav-links{
+  display:flex;
+  list-style:none;
+  gap:30px;
+  color:#ccc;
+}
+
+.nav-links li:hover{
+  color:white;
+
+}
+
+.login-btn{
+  padding:10px 22px;
+  border:none;
+  border-radius:20px;
+  background:#6c7bff;
+  color:white;
+  /* cursor:pointer;     */
+}
+
+
+
+.second-section{
+  text-align:center;
+  padding:40px 80px;
+}
+
+.second-section h1{
+  font-size:70px;
+  margin-bottom:50px;
+}
+
+.dot{
+  display:inline-block;
+  width:10px;
+  height:10px;
+  background:red;
+  border-radius:50%;
+  margin:0 10px;
+}
+
+
+
+.card{
+  display:flex;
+  justify-content:space-between;
+  background:linear-gradient(to right,#111,#1f0c0c);
+  padding:40px;
+  border-radius:15px;
+  border:1px solid #530a17;
+}
+
+
+
+.left{
+  width:60%;
+  text-align:left;
+}
+
+.left h2{
+  font-size:30px;
+  margin-bottom:25px;
+}
+
+.red{
+  color:red;
+}
+
+.features{
+  display:flex;
+  gap:40px;
+  margin-bottom:30px;
+}
+
+.features p{
+  margin-bottom:12px;
+  color:#ccc;
+}
+
+.countdown{
+  display:flex;
+  gap:20px;
+  
+}
+
+.countdown div{
+  background:#330000;
+  padding:20px 60px;
+  border-radius:10px;
+  text-align:center;
+  border:1px solid #930d26;
+}
+
+.countdown h3{
+  font-size:28px;
+}
+
+.countdown span{
+  font-size:12px;
+  color:red;
+}
+
+
+.right{
+  width:35%;
+  background:#1e1d1d;
+  padding:25px;
+  border-radius:15px;
+  text-align:center;
+  position:relative;
+}
+
+.badge{
+  position:absolute;
+  top:-10px;
+  left:-10px;
+  background:red;
+  padding:6px 15px;
+  border-radius:5px;
+  font-size:13px;
+}
+
+.image-box{
+  width:100%;
+  height:200px;
+  background:#222;
+  border-radius:10px;
+  margin-bottom:20px;
+  /* overflow:hidden; */
+}
+
+.image-box img{
+  width:100%;
+  height:100%;
+  /* object-fit:cover; */
+}
+
+.course-btn{
+  margin-top:15px;
+  padding:12px 25px;
+  background:rgb(219, 37, 37);
+  /* border:none; */
+  border-radius:6px;
+  color:white;
+
+}
+
+
+
+
+
+
+
+
+
+/* 3rd */
+
+.feature-section{
+  display:flex;
+  justify-content:space-between;
+  padding:40px 80px;
+background:#0e0f12;
+/* background-color: blue; */
+}
+
+
+.feature-left{
+  width:45%;
+}
+
+.feature-left h1{
+  font-size:48px;
+  margin-bottom:20px;
+}
+
+.feature-left p{
+  color:#aaa;
+  margin-bottom:30px;
+  line-height:1.6;
+}
+
+.feature-buttons{
+  margin-bottom:35px;
+}
+
+.btn{
+  padding:14px 28px;
+  border-radius:30px;
+  border:none;
+  /* cursor:pointer; */
+  margin-right:15px;
+  font-size:15px;
+}
+
+.primary-btn{
+  background:#6c7bff;
+  color:white;
+}
+
+.outline-btn{
+  background:transparent;
+  border:1px solid #ff4d6d;
+  color:white;
+}
+
+.live{
+  color:#ff4d6d;
+}
+
+
+.students-box{
+  display:flex;
+  align-items:center;
+  background:#111827;
+  padding:10px 20px;
+  border-radius:40px;
+  width:fit-content;
+  border:1px solid #ff4d6d33;
+}
+
+.student-images{
+  display:flex;
+  margin-right:15px;
+}
+
+.student-images img{
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  border:2px solid #f9fafe;
+  margin-left:-12px;
+  background:gray;
+  
+}
+
+
+.feature-right{
+  width:45%;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:25px;
+}
+
+.feature-card{
+  background:#111;
+  padding:30px;
+  text-align:center;
+  border-radius:12px;
+  font-weight:bold;
+  border:1px solid #333;
+  
+}
+
+
+/* 4rth section */
+
+
+
+.followers{
+padding:40px 80px;
+justify-items: center;
+}
+
+
+.social-media{
+  height: 250px;
+  width: 90%;
+  justify-content: center;
   align-items: center;
-  padding: 20px 80px;
-  background: #0b0f1a;
-}
-
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.logo span {
-  color: #4c7dff;
-}
-
-.nav-links {
+  
+  background-color: rgb(9, 7, 14);
   display: flex;
-  gap: 30px;
-  list-style: none;
-  color: #ccc;
-}
-
-.nav-links li:hover {
-  color: white;
-  cursor: pointer;
-}
-
-.login-btn {
-  padding: 10px 20px;
-  background: #6c7bff;
-  border: none;
-  border-radius: 20px;
-  color: white;
-  cursor: pointer;
-}
-
-/* Hero Section */
-.hero {
-  text-align: center;
-  padding: 40px 80px;
-}
-
-.hero h1 {
-  font-size: 60px;
-  margin-bottom: 40px;
-}
-
-.dot {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  background: red;
-  border-radius: 50%;
-  margin: 0 10px;
-}
-
-/* Card */
-.card-container {
-  display: flex;
-  justify-content: space-between;
-  background: linear-gradient(to right, #111, #2a0000);
-  padding: 40px;
+  justify-content: space-around;
   border-radius: 10px;
+  border: 1px solid rgb(58, 58, 64);
+  
+ 
+   
 }
 
-/* Left */
-.left-content {
-  width: 60%;
-  text-align: left;
-}
-
-.left-content h2 {
-  font-size: 30px;
-  margin-bottom: 20px;
-}
-
-.red {
-  color: red;
-}
-
-.features {
-  display: flex;
-  gap: 40px;
-  margin-bottom: 30px;
-}
-
-.features p {
-  margin-bottom: 10px;
-  color: #ccc;
-}
-
-/* Countdown */
-.countdown {
-  display: flex;
-  gap: 20px;
-}
-
-.countdown div {
-  background: #330000;
-  padding: 20px 30px;
+.social-media div{
+ 
+  height: 100px;
+  width: 200px;
   border-radius: 10px;
-  text-align: center;
+
+  justify-items: center;
+  border: 1px solid rgb(88, 83, 121);
+  
 }
 
-.countdown h3 {
-  font-size: 28px;
-  color: white;
+.social-media:hover{
+  background-color: rgb(15, 15, 30);
 }
 
-.countdown span {
-  color: red;
-  font-size: 12px;
-}
-
-/* Right */
-.right-content {
-  width: 35%;
-  background: #111;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-  position: relative;
-}
-
-.new-badge {
-  position: absolute;
-  top: -10px;
-  left: -10px;
-  background: red;
-  padding: 5px 15px;
-  border-radius: 5px;
-  font-size: 14px;
-}
-
-.image-box {
-  width: 100%;
-  height: 200px;
-  background: #222;   /* Placeholder */
-  margin-bottom: 20px;
-  border-radius: 10px;
-}
-
-.course-btn {
-  margin-top: 15px;
-  padding: 12px 20px;
-  background: red;
-  border: none;
-  border-radius: 5px;
-  color: white;
-  cursor: pointer;
-}
-
-
-
-.left {
-    width: 45%;
-}
-
-.left h1 {
-    font-size: 40px;
-    margin-bottom: 20px;
-}
-
-.left p {
-    color: #aaa;
-    margin-bottom: 25px;
-    line-height: 1.6;
-}
-
-.buttons {
-    margin-bottom: 30px;
-}
-
-.btn {
-    padding: 12px 22px;
-    border-radius: 30px;
-    border: none;
-    cursor: pointer;
-    margin-right: 15px;
-    font-size: 15px;
-}
-
-.primary {
-    background: #6c7ae0;
-    color: white;
-}
-
-.secondary {
-    background: transparent;
-    border: 1px solid #ff4d6d;
-    color: white;
-}
-
-/* STUDENTS */
-.students {
-    display: flex;
-    align-items: center;
-    background: #111827;
-    padding: 10px 20px;
-    border-radius: 40px;
-    width: fit-content;
-}
-
-.images {
-    display: flex;
-    margin-right: 10px;
-}
-
-.images img {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    border: 2px solid #0b0f19;
-    margin-left: -10px;
-    background: gray; /* placeholder */
-}
-
-/* RIGHT SIDE */
-.right {
-    width: 45%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
-.box {
-    border: 1px solid #444;
-    padding: 25px;
-    text-align: center;
-    border-radius: 10px;
-    font-weight: bold;
-    background: #111827;
-    transition: 0.3s;
-}
-
-.box:hover {
-    border-color: #ff4d6d;
-    transform: translateY(-5px);
-}
-body {
-    background-color: #0b0f19;
-    color: white;
-}
